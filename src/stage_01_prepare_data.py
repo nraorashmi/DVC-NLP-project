@@ -5,7 +5,7 @@ from src.utils import read_yaml, create_directories, process_posts
 import random
 
 
-STAGE = "Prepare_data" ## <<< change stage name 
+STAGE = "Prepare_data" ## <<< change stage name ,here train_test_xml2tsv
 
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'), 
@@ -28,7 +28,7 @@ def main(config_path, params_path):
     seed = params["prepare"]["seed"]
     tag = params["prepare"]["tag"]
 
-    random.seed(seed)
+    random.seed(seed)  #helpful during reproducing the results
 
     artifacts = config["artifacts"]
     prepare_data_dir_path = os.path.join(artifacts["ARTIFACTS_DIR"], artifacts["PREPARED_DATA"])
