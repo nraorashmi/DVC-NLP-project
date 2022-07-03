@@ -62,6 +62,8 @@ dependencies:
     - jaraco-ui==2.3.0
     - jaraco-windows==5.7.0
     - jinja2==3.1.2
+    - joblib==1.1.0
+    - lxml==4.9.1
     - mailchecker==4.1.17
     - markdown==3.3.7
     - markupsafe==2.1.1
@@ -98,6 +100,8 @@ dependencies:
     - rich==12.4.4
     - ruamel-yaml==0.17.21
     - ruamel-yaml-clib==0.2.6
+    - scikit-learn==1.0.2
+    - scipy==1.7.3
     - scmrepo==0.0.19
     - shortuuid==1.0.9
     - shtab==1.5.5
@@ -105,6 +109,7 @@ dependencies:
     - smmap==5.0.0
     - tabulate==0.8.10
     - text-unidecode==1.3
+    - threadpoolctl==3.1.0
     - toml==0.10.2
     - tqdm==4.64.0
     - typing-extensions==4.3.0
