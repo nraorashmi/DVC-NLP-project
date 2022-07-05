@@ -38,18 +38,18 @@ def main(config_path, params_path):
 
     # train
     df_train = get_df(train_data_path)
-    train_words = np.array(df_train.text.str.lower().values.astype("U"))
+    train_words = np.array(df_train.text.str.lower().values.astype("U")) #convert to unicode
 
     bag_of_words = CountVectorizer(
         stop_words="english",
         max_features=max_features,
-        ngram_range=(1, n_grams)
+        ngram_range=(1, n_grams)  #used for word association
     )
 
     bag_of_words.fit(train_words)
     train_words_binary_matrix = bag_of_words.transform(train_words)
 
-    tfidf = TfidfTransformer(smooth_idf=False)
+    tfidf = TfidfTransformer(smooth_idf=False) #smooth_idf when set to True adds 1 to numerator and denominator to avoid zero division error, say there are no matching words in the sentence
     tfidf.fit(train_words_binary_matrix)
     train_words_tfidf_matrix = tfidf.transform(train_words_binary_matrix)
     # call a function to save this matrix

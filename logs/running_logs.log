@@ -16,3 +16,23 @@ NameError: name 'read_yaml' is not defined
 [2022-07-03 17:44:54,288: INFO: common]: created directory at: artifacts\prepared
 [2022-07-03 17:45:03,588: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
 
+[2022-07-05 17:11:03,894: INFO: stage_01_prepare_data]: 
+********************
+[2022-07-05 17:11:03,894: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-07-05 17:11:03,901: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-05 17:11:03,907: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-05 17:11:03,908: INFO: common]: created directory at: artifacts\prepared
+[2022-07-05 17:11:08,379: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-07-05 18:03:16,437: INFO: stage_02_featurization]: 
+********************
+[2022-07-05 18:03:16,438: INFO: stage_02_featurization]: >>>>> stage Featurization started <<<<<
+[2022-07-05 18:03:16,441: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-05 18:03:16,443: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-05 18:03:16,443: INFO: common]: created directory at: artifacts\features
+[2022-07-05 18:03:16,676: INFO: common]: The input data frame artifacts\prepared\train.tsv of size (17536, 3) is read.
+[2022-07-05 18:03:38,108: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 3002)
+[2022-07-05 18:03:38,239: INFO: common]: The input data frame artifacts\prepared\test.tsv of size (7464, 3) is read.
+[2022-07-05 18:03:40,921: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 3002)
+[2022-07-05 18:03:41,319: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
+
