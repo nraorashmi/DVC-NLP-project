@@ -8,3 +8,11 @@ Traceback (most recent call last):
   File "C:\Users\nraor\Documents\rashmi\ineuron\Deep_learning\NLP\DVC-NLP-project\src\stage_01_prepare_data.py", line 20, in main
     config = read_yaml(config_path)
 NameError: name 'read_yaml' is not defined
+[2022-07-03 17:44:54,254: INFO: stage_01_prepare_data]: 
+********************
+[2022-07-03 17:44:54,255: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-07-03 17:44:54,269: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-03 17:44:54,280: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-03 17:44:54,288: INFO: common]: created directory at: artifacts\prepared
+[2022-07-03 17:45:03,588: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
