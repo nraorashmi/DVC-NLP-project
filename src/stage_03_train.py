@@ -36,7 +36,7 @@ def main(config_path, params_path):
 
     matrix = joblib.load(featurized_train_data_path)
 
-    labels = np.squeeze(matrix[:, 1].toarray())
+    labels = np.squeeze(matrix[:, 1].toarray()) #Squeeze selects a subset of the single-dimensional entries in the shape. Toarray is used to convert to dense matrix from csr_matrix
     X = matrix[:, 2:]
 
     logging.info(f"input matrix size: {matrix.shape}")
