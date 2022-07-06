@@ -16,7 +16,7 @@ repo_url: https://github.com/nraorashmi/DVC-NLP-project
 
 # Configuration
 theme:
-  name: material
+  name: material  #or readthedocs 
   features:
     - navigation.tabs
     - navigation.sections
